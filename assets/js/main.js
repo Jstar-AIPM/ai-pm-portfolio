@@ -54,24 +54,6 @@
     el("footerYear").textContent = new Date().getFullYear();
   }
 
-  /* ---------- 个人形象照 ---------- */
-  function renderPhoto() {
-    var box = el("heroPhoto");
-    if (!box) return;
-
-    if (SITE.photo) {
-      box.removeAttribute("aria-hidden");
-      box.classList.add("has-photo");
-      box.style.backgroundImage = "url('" + SITE.photo + "')";
-      box.innerHTML = '<img src="' + escapeHtml(SITE.photo) + '" alt="' +
-        escapeHtml(SITE.name) + ' 的个人形象照" />';
-    } else {
-      // 占位：虚线灰框 + 提示文字
-      box.setAttribute("aria-hidden", "true");
-      box.innerHTML = '<span class="hero-photo-label">个人形象照</span>';
-    }
-  }
-
   /* ---------- 项目 ---------- */
   function workflowHtml(steps) {
     return (steps || [])
@@ -144,10 +126,6 @@
           ? '<a class="btn btn-ghost" href="' + escapeHtml(p.github) + '" target="_blank" rel="noopener">GitHub <span class="btn-ico" aria-hidden="true">↗</span></a>'
           : "");
 
-      var status = p.status
-        ? '<span class="project-status">' + escapeHtml(p.status) + "</span>"
-        : "";
-
       return (
         '<article class="project reveal' + reverse + '">' +
           '<header class="project-top">' +
@@ -156,7 +134,6 @@
               '<span class="cat-en" lang="en">' + escapeHtml(cat.en) + "</span>" +
               '<span class="cat-zh">' + escapeHtml(cat.zh) + "</span>" +
             "</span>" +
-            status +
           "</header>" +
           '<div class="project-grid">' +
             '<div class="project-body">' +
@@ -243,7 +220,6 @@
   /* ---------- 启动 ---------- */
   function init() {
     renderSite();
-    renderPhoto();
     renderProjects();
     renderHow();
     initSliders();

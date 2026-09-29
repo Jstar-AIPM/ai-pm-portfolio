@@ -37,19 +37,10 @@ python3 -m http.server 8000
 
 **只改一个文件：`assets/js/data.js`。**
 
-- `SITE` — 品牌名、姓名、身份、理念、辅助说明、GitHub 主页、邮箱、个人形象照
+- `SITE` — 品牌名、姓名、身份、理念、辅助说明、GitHub 主页、邮箱
 - `CATEGORIES` — 三个内容分类（AI × 产品工作 / 思考与效率 / 生活与兴趣）
 - `PROJECTS` — 项目数组
 - `HOW_I_BUILD` — How I Build 的步骤与说明
-
-### 个人形象照
-
-Hero 右侧预留了个人形象照区域。默认显示灰色占位框；拿到照片后：
-
-1. 把照片放进 `assets/img/`（建议 webp，宽度 ≤ 1200）
-2. 在 `SITE.photo` 填路径，例如 `photo: "assets/img/portrait.webp"`
-
-填上后会自动替换占位框。
 
 ### 项目配图（横向滑动）
 
