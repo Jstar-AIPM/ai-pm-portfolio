@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>靳伟星 · AI 产品经理 / AI Builder</title>
+  <meta name="description" content="靳伟星，AI 产品经理 / AI Builder。从真实的问题和想法出发，用 AI 把它们做成可以使用的产品。这里展示了我做过的三个 AI 产品。" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="靳伟星 · AI 产品经理 / AI Builder" />
+  <meta property="og:description" content="AI 让想法被实现，也让想法被看见。" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#projects">跳到项目展示</a>
+
+  <!-- 顶部导航 -->
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="nav-name" href="#top" id="navName">AI Portfolio</a>
+      <nav class="nav-links" aria-label="主导航">
+        <a href="#projects">项目</a>
+        <a class="nav-gh" id="navGithub" href="#" target="_blank" rel="noopener">
+          GitHub
+          <svg width="13" height="13" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="hero-head reveal">
+            <span class="hero-name" id="heroName">靳伟星</span>
+            <span class="hero-sep" aria-hidden="true">/</span>
+            <span class="hero-role" id="heroRole">AI 产品经理 · AI Builder</span>
+          </p>
+
+          <h1 class="hero-idea reveal" id="heroIdea">
+            AI 让想法被实现，<br />也让想法被看见。
+          </h1>
+
+          <p class="hero-idea-en reveal" id="heroIdeaEn" lang="en">
+            AI turns ideas into reality — and makes thoughts visible.
+          </p>
+
+          <p class="hero-intro reveal" id="heroIntro">
+            我喜欢从真实的问题和想法出发，用 AI 把它们做成真正可以使用的产品。
+          </p>
+
+          <div class="hero-cta reveal">
+            <a class="btn btn-dark" href="#projects">
+              查看我的项目 <span class="btn-ico" aria-hidden="true">↓</span>
+            </a>
+            <a class="btn btn-ghost" id="heroGithub" href="#" target="_blank" rel="noopener">
+              GitHub <span class="btn-ico" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 个人形象照：暂为灰色占位，图就绪后在 data.js 的 SITE.photo 填路径 -->
+        <div class="hero-photo reveal" id="heroPhoto" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- 项目展示 -->
+    <section class="section" id="projects">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="kicker">Selected Work</p>
+          <h2 class="section-title">项目</h2>
+          <p class="section-sub">三个来自真实问题的 AI 产品。点击进入在线体验或 GitHub 查看细节。</p>
+        </div>
+        <div class="projects" id="projectsList"></div>
+      </div>
+    </section>
+
+    <!-- How I Build -->
+    <section class="section section-build" id="how">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="kicker">How I Build</p>
+          <h2 class="section-title">我如何把一个想法变成可用的产品</h2>
+        </div>
+        <div class="build-flow reveal" id="buildFlow"></div>
+        <p class="build-note reveal" id="buildNote"></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <p class="footer-name">© <span id="footerYear">2026</span> 靳伟星 · AI 产品经理 / AI Builder</p>
+      <nav class="footer-links" aria-label="页脚">
+        <a id="footerGithub" href="#" target="_blank" rel="noopener">GitHub ↗</a>
+        <a id="footerEmail" href="#">邮箱</a>
+        <a href="#top">回到顶部 ↑</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
